@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 3001;
 const db = mongoose.connection;
 const app = express();
 const mongoURI =
-  process.env.MONGODB_URI || "mongodb://localhost:27017/exercise-track-app";
+  process.env.MONGODB_URI || "mongodb+srv://ben:ben!@#$%^@cluster0-xfqpx.mongodb.net/Cluster0?retryWrites=true";
 
 //=================================================
 //                Middleware
@@ -56,5 +56,5 @@ db.on("disconnected", () => console.log("mongo disconnected"));
 //                  PORT 3000
 //=======================================================
 app.listen(PORT, () => {
-  console.log(`Ascoltando alla porta, ${PORT} => I am learning Italian`);
+  console.log(`Ascoltando alla porta, ${PORT} => I am learning hebrew`);
 });
